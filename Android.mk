@@ -11,9 +11,9 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 
 LOCAL_SRC_FILES := \
         $(call all-java-files-under, src) \
-        src/com/android/browser/EventLogTags.logtags
+        src/com.android.xbrowser/EventLogTags.logtags
 
-LOCAL_PACKAGE_NAME := Browser
+LOCAL_PACKAGE_NAME := XBrowser
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
