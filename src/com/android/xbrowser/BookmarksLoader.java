@@ -19,8 +19,8 @@ package com.android.xbrowser;
 import android.content.Context;
 import android.content.CursorLoader;
 import android.net.Uri;
-import android.provider.BrowserContract.Bookmarks;
-import android.provider.BrowserContract.ChromeSyncColumns;
+import com.android.external.BrowserContract.Bookmarks;
+import com.android.external.BrowserContract.ChromeSyncColumns;
 
 public class BookmarksLoader extends CursorLoader {
     public static final String ARG_ACCOUNT_TYPE = "acct_type";

@@ -25,7 +25,7 @@ import android.content.Intent;
 import android.content.Loader;
 import android.database.Cursor;
 import android.os.Bundle;
-import android.provider.BrowserContract.Accounts;
+import com.android.external.BrowserContract.Accounts;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;

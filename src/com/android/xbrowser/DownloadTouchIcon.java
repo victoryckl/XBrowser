@@ -34,8 +34,8 @@ import android.net.http.AndroidHttpClient;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Message;
-import android.provider.BrowserContract;
-import android.provider.BrowserContract.Images;
+import com.android.external.BrowserContract;
+import com.android.external.BrowserContract.Images;
 import android.webkit.WebView;
 
 import java.io.ByteArrayOutputStream;

@@ -30,7 +30,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.database.sqlite.SQLiteQueryBuilder;
 import android.net.Uri;
 import android.os.Environment;
-import android.provider.BrowserContract;
+import com.android.external.BrowserContract;
 
 import java.io.File;
 

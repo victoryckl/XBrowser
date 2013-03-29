@@ -25,7 +25,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.AsyncTask;
-import android.provider.BrowserContract;
+import com.android.external.BrowserContract;
 import android.text.Html;
 import android.text.TextUtils;
 import android.view.LayoutInflater;

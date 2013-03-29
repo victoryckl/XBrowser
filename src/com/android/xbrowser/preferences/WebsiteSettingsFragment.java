@@ -29,7 +29,7 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.preference.PreferenceActivity;
-import android.provider.BrowserContract.Bookmarks;
+import com.android.external.BrowserContract.Bookmarks;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;

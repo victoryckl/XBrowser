@@ -25,8 +25,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteException;
 import android.os.Handler;
 import android.os.Message;
-import android.provider.BrowserContract;
-import android.provider.BrowserContract.History;
+import com.android.external.BrowserContract;
+import com.android.external.BrowserContract.History;
 import android.util.Log;
 
 import java.util.concurrent.BlockingQueue;
