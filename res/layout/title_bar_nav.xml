@@ -14,7 +14,7 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 -->
-<com.android.browser.NavigationBarPhone
+<com.android.xbrowser.NavigationBarPhone
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:background="@drawable/bg_urlbar">
@@ -70,7 +70,7 @@
             android:contentDescription="@string/accessibility_button_stop"
             android:src="@drawable/ic_stop_holo_dark"
             style="@style/HoloButton" />
-        <com.android.browser.UrlInputView
+        <com.android.xbrowser.UrlInputView
             android:id="@+id/url"
             android:focusable="true"
             android:layout_width="0dip"
@@ -122,4 +122,4 @@
         android:gravity="center_vertical"
         android:contentDescription="@string/accessibility_button_more"
         android:src="@drawable/ic_menu_overflow" />
-</com.android.browser.NavigationBarPhone>
+</com.android.xbrowser.NavigationBarPhone>
