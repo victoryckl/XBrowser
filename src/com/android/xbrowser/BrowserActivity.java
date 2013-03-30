@@ -41,7 +41,7 @@ public class BrowserActivity extends Activity {
     public static final String ACTION_RESTART = "--restart--";
     private static final String EXTRA_STATE = "state";
 
-    private final static String LOGTAG = "browser";
+    private final static String LOGTAG = "xbrowser";
 
     private final static boolean LOGV_ENABLED = Browser.LOGV_ENABLED;
 

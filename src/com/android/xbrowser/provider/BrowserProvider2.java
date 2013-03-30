@@ -71,7 +71,7 @@ public class BrowserProvider2 extends SQLiteContentProvider {
     public static final String PARAM_GROUP_BY = "groupBy";
     public static final String PARAM_ALLOW_EMPTY_ACCOUNTS = "allowEmptyAccounts";
 
-    public static final String LEGACY_AUTHORITY = "browser";
+    public static final String LEGACY_AUTHORITY = "xbrowser";
     static final Uri LEGACY_AUTHORITY_URI = new Uri.Builder()
             .authority(LEGACY_AUTHORITY).scheme("content").build();
 

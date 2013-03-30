@@ -27,7 +27,7 @@ import android.util.Log;
  */
 public class Performance {
 
-    private static final String LOGTAG = "browser";
+    private static final String LOGTAG = "xbrowser";
 
     private final static boolean LOGD_ENABLED =
             com.android.xbrowser.Browser.LOGD_ENABLED;

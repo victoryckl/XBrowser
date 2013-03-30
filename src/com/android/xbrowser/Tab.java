@@ -99,7 +99,7 @@ class Tab implements PictureListener {
     // Special case the logtag for messages for the Console to make it easier to
     // filter them and match the logtag used for these messages in older versions
     // of the browser.
-    private static final String CONSOLE_LOGTAG = "browser";
+    private static final String CONSOLE_LOGTAG = "xbrowser";
 
     private static final int MSG_CAPTURE = 42;
     private static final int CAPTURE_DELAY = 100;

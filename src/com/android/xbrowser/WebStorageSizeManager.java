@@ -88,7 +88,7 @@ public class WebStorageSizeManager {
     // Logging flags.
     private final static boolean LOGV_ENABLED = com.android.xbrowser.Browser.LOGV_ENABLED;
     private final static boolean LOGD_ENABLED = com.android.xbrowser.Browser.LOGD_ENABLED;
-    private final static String LOGTAG = "browser";
+    private final static String LOGTAG = "xbrowser";
     // The default quota value for an origin.
     public final static long ORIGIN_DEFAULT_QUOTA = 3 * 1024 * 1024;  // 3MB
     // The default value for quota increases.

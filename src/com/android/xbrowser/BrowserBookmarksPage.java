@@ -82,7 +82,7 @@ public class BrowserBookmarksPage extends Fragment implements View.OnCreateConte
         public int groupPosition;
     }
 
-    static final String LOGTAG = "browser";
+    static final String LOGTAG = "xbrowser";
 
     static final int LOADER_ACCOUNTS = 1;
     static final int LOADER_BOOKMARKS = 100;
