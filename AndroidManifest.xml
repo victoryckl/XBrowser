@@ -53,7 +53,7 @@
                    android:taskAffinity="android.task.xbrowser" >
 
         <provider android:name=".provider.BrowserProvider2"
-                  android:authorities="com.android.xbrowser;browser"
+                  android:authorities="com.android.xbrowser;xbrowser"
                   android:multiprocess="true"
                   android:readPermission="com.android.xbrowser.permission.READ_HISTORY_BOOKMARKS"
                   android:writePermission="com.android.xbrowser.permission.WRITE_HISTORY_BOOKMARKS">
