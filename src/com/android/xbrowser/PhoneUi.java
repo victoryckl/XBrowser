@@ -67,6 +67,7 @@ public class PhoneUi extends BaseUi {
      */
     public PhoneUi(Activity browser, UiController controller) {
         super(browser, controller);
+        Log.i(LOGTAG, "PhoneUi()");
         setUseQuickControls(BrowserSettings.getInstance().useQuickControls());
         mNavigationBar = (NavigationBarPhone) mTitleBar.getNavigationBar();
         TypedValue heightValue = new TypedValue();

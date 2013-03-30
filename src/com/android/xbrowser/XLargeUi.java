@@ -60,6 +60,7 @@ public class XLargeUi extends BaseUi {
      */
     public XLargeUi(Activity browser, UiController controller) {
         super(browser, controller);
+        Log.i(LOGTAG, "XLargeUi()");
         mHandler = new Handler();
         mNavBar = (NavigationBarTablet) mTitleBar.getNavigationBar();
         mTabBar = new TabBar(mActivity, mUiController, this);
