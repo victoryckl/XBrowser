@@ -168,7 +168,7 @@ public class DataController {
                     cr.update(ContentUris.withAppendedId(History.CONTENT_URI, c.getLong(0)),
                             values, null, null);
                 } else {
-                    android.provider.Browser.truncateHistory(cr);
+                    com.android.external.Browser.truncateHistory(cr);
                     ContentValues values = new ContentValues();
                     values.put(History.URL, url);
                     values.put(History.VISITS, 1);

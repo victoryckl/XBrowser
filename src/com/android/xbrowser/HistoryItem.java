@@ -18,7 +18,7 @@
 package com.android.xbrowser;
 
 import android.content.Context;
-import android.provider.Browser;
+import com.android.external.Browser;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;

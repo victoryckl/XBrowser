@@ -21,7 +21,7 @@ import android.content.UriMatcher;
 import android.content.res.Resources;
 import android.database.Cursor;
 import android.net.Uri;
-import android.provider.Browser;
+import com.android.external.Browser;
 import android.text.TextUtils;
 import android.util.Base64;
 import android.util.Log;

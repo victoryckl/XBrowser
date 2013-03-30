@@ -26,7 +26,7 @@ import android.net.Uri;
 import android.nfc.NfcAdapter;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.provider.Browser;
+import com.android.external.Browser;
 import android.provider.MediaStore;
 import android.speech.RecognizerResultsIntent;
 import android.text.TextUtils;

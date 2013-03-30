@@ -25,7 +25,7 @@ import android.content.pm.ResolveInfo;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.AsyncTask;
-import android.provider.Browser;
+import com.android.external.Browser;
 import android.util.Log;
 import android.webkit.WebView;
 

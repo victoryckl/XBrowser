@@ -25,7 +25,7 @@ import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.os.Build;
 import android.os.Message;
 import android.preference.PreferenceManager;
-import android.provider.Browser;
+import com.android.external.Browser;
 import android.provider.Settings;
 import android.util.DisplayMetrics;
 import android.webkit.CookieManager;

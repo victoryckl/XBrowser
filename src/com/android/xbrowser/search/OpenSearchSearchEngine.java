@@ -35,7 +35,7 @@ import android.net.NetworkInfo;
 import android.net.Uri;
 import android.net.http.AndroidHttpClient;
 import android.os.Bundle;
-import android.provider.Browser;
+import com.android.external.Browser;
 import android.text.TextUtils;
 import android.util.Log;
 

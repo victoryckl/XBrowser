@@ -46,7 +46,7 @@ import android.os.Message;
 import android.os.PowerManager;
 import android.os.PowerManager.WakeLock;
 import android.preference.PreferenceActivity;
-import android.provider.Browser;
+import com.android.external.Browser;
 import com.android.external.BrowserContract;
 import com.android.external.BrowserContract.Images;
 import android.provider.ContactsContract;
