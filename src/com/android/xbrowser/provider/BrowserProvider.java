@@ -56,7 +56,8 @@ import java.util.regex.Pattern;
 
 
 public class BrowserProvider extends ContentProvider {
-
+	private static final String AUTHORITY = "xbrowser";
+			
     private SQLiteOpenHelper mOpenHelper;
     private BackupManager mBackupManager;
     static final String sDatabaseName = "browser.db";
@@ -127,17 +128,17 @@ public class BrowserProvider extends ContentProvider {
 
     static {
         URI_MATCHER = new UriMatcher(UriMatcher.NO_MATCH);
-        URI_MATCHER.addURI("browser", TABLE_NAMES[URI_MATCH_BOOKMARKS],
+        URI_MATCHER.addURI(AUTHORITY, TABLE_NAMES[URI_MATCH_BOOKMARKS],
                 URI_MATCH_BOOKMARKS);
-        URI_MATCHER.addURI("browser", TABLE_NAMES[URI_MATCH_BOOKMARKS] + "/#",
+        URI_MATCHER.addURI(AUTHORITY, TABLE_NAMES[URI_MATCH_BOOKMARKS] + "/#",
                 URI_MATCH_BOOKMARKS_ID);
-        URI_MATCHER.addURI("browser", TABLE_NAMES[URI_MATCH_SEARCHES],
+        URI_MATCHER.addURI(AUTHORITY, TABLE_NAMES[URI_MATCH_SEARCHES],
                 URI_MATCH_SEARCHES);
-        URI_MATCHER.addURI("browser", TABLE_NAMES[URI_MATCH_SEARCHES] + "/#",
+        URI_MATCHER.addURI(AUTHORITY, TABLE_NAMES[URI_MATCH_SEARCHES] + "/#",
                 URI_MATCH_SEARCHES_ID);
-        URI_MATCHER.addURI("browser", SearchManager.SUGGEST_URI_PATH_QUERY,
+        URI_MATCHER.addURI(AUTHORITY, SearchManager.SUGGEST_URI_PATH_QUERY,
                 URI_MATCH_SUGGEST);
-        URI_MATCHER.addURI("browser",
+        URI_MATCHER.addURI(AUTHORITY,
                 TABLE_NAMES[URI_MATCH_BOOKMARKS] + "/" + SearchManager.SUGGEST_URI_PATH_QUERY,
                 URI_MATCH_BOOKMARKS_SUGGEST);
     }
@@ -1142,7 +1143,7 @@ public class BrowserProvider extends ContentProvider {
     }
 
     public static Cursor getBookmarksSuggestions(ContentResolver cr, String constraint) {
-        Uri uri = Uri.parse("content://browser/" + SearchManager.SUGGEST_URI_PATH_QUERY);
+        Uri uri = Uri.parse("content://" + AUTHORITY + "/" + SearchManager.SUGGEST_URI_PATH_QUERY);
         return cr.query(uri, SUGGEST_PROJECTION, SUGGEST_SELECTION,
             new String[] { constraint }, ORDER_BY);
     }
