@@ -16,7 +16,7 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="application_name" msgid="1935869255545976415">"浏览器"</string>
+    <string name="application_name" msgid="1935869255545976415">&quot;X浏览器&quot;</string>
     <string name="choose_upload" msgid="3649366287575002063">"选择要上传的文件"</string>
     <string name="uploads_disabled" msgid="463761197575372994">"文件上传功能已停用。"</string>
     <string name="new_tab" msgid="7971857320679510529">"新标签页"</string>
