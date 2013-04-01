@@ -22,7 +22,7 @@ import android.webkit.CookieSyncManager;
 
 public class Browser extends Application { 
 
-    private final static String LOGTAG = "xbrowser";
+	public final static String LOGTAG = "xbrowser";
     
     // Set to true to enable verbose logging.
     final static boolean LOGV_ENABLED = false;

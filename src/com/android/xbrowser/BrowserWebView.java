@@ -19,16 +19,21 @@ package com.android.xbrowser;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 import android.webkit.WebView;
 
 import java.util.Map;
 
+import com.android.xbrowser.Browser;
+import com.tools.StackTrace;
+
 /**
  * Manage WebView scroll events
  */
 public class BrowserWebView extends WebView {
-
+	private static final String LOGTAG = Browser.LOGTAG + ".BrowserWebView";
+	
     public interface OnScrollChangedListener {
         void onScrollChanged(int l, int t, int oldl, int oldt);
     }
@@ -46,6 +51,7 @@ public class BrowserWebView extends WebView {
     public BrowserWebView(Context context, AttributeSet attrs, int defStyle,
             Map<String, Object> javascriptInterfaces, boolean privateBrowsing) {
         super(context, attrs, defStyle, javascriptInterfaces, privateBrowsing);
+        init();
     }
 
     /**
@@ -56,6 +62,7 @@ public class BrowserWebView extends WebView {
     public BrowserWebView(
             Context context, AttributeSet attrs, int defStyle, boolean privateBrowsing) {
         super(context, attrs, defStyle, privateBrowsing);
+        init();
     }
 
     /**
@@ -64,6 +71,7 @@ public class BrowserWebView extends WebView {
      */
     public BrowserWebView(Context context, AttributeSet attrs) {
         super(context, attrs);
+        init();
     }
 
     /**
@@ -71,8 +79,14 @@ public class BrowserWebView extends WebView {
      */
     public BrowserWebView(Context context) {
         super(context);
+        init();
     }
-
+    
+    private void init() {
+    	Log.i(LOGTAG, "new BrowserWebView()");
+    	StackTrace.printStackTrace();
+    }
+    
     @Override
     protected int getTitleHeight() {
         return (mTitleBar != null) ? mTitleBar.getEmbeddedHeight() : 0;
